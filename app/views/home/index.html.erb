@@ -1,7 +1,8 @@
 <h1>HOME</h1>
 <!-- ↓index.html.erbファイルでは、
         home_controllerのindexメソッドで定義したインスタンス変数を呼び出せる -->
-<h2><%= @title %></h2>
+<h2><%= @article.title %></h2>
+<h2><%= @article.content %></h2>
 
 <%= link_to 'ABOUT', about_path %>
 <!-- "<%= %>"は rubyを埋め込むときに使う -->
